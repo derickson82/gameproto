@@ -1,0 +1,23 @@
+<html>
+<body>
+	<a href="prototype.jnlp">Run Game Prototype</a>
+	
+	or below should be the applet.
+	
+	<div>
+	<applet code="org.lwjgl.util.applet.AppletLoader" archive="http://www.lwjgl.org/applet/lwjgl_util_applet.jar, http://www.lwjgl.org/applet/lzma.jar" codebase="." width="640" height="480"> 
+    <param name="al_title" value="balltest"> 
+    <param name="al_main" value="org.newdawn.slick.AppletGameContainer"> 
+    <param name="game" value="${main.class}"/> 
+    <param name="al_logo" value="appletlogo.png"> 
+    <param name="al_progressbar" value="appletprogress.gif"> 
+    <param name="al_jars" value="${ant.project.name}.jar, lib/slick.jar, lib/jogg-0.0.7.jar,lib/jorbis-0.0.15.jar, http://www.lwjgl.org/applet/lwjgl.jar.pack.lzma, http://www.lwjgl.org/applet/lwjgl_util.jar.pack.lzma"> 
+    <param name="al_windows" value="http://www.lwjgl.org/applet/windows_natives.jar.lzma"> 
+    <param name="al_linux" value="http://www.lwjgl.org/applet/linux_natives.jar.lzma"> 
+    <param name="al_mac" value="http://www.lwjgl.org/applet/macosx_natives.jar.lzma"> 
+    <param name="al_solaris" value="http://www.lwjgl.org/applet/solaris_natives.jar.lzma"> 
+    <param name="separate_jvm" value="true"> 
+  </applet> 
+	</div>
+</body>
+</html>
